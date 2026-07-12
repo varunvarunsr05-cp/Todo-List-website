@@ -13,11 +13,6 @@ function App() {
   const [todos, setodos] = useState([])
   const [showfinished, setshowfinished] = useState(false)
 
-  // const [fruit, setfruit] = useState([
-  //   {name:"varun"},
-  //   {name:"varun2"},
-  //   {name:"varun3"},
-  // ])
   const togglefinished = (e) => {
     setshowfinished(!showfinished)
   }
@@ -102,7 +97,7 @@ function App() {
           <h2 className='font-bold text-lg'>Add Todo</h2>
 
           <input type="text" className='bg-amber-50 w-[80%] rounded-xl py-1 ' value={todo} onChange={handleChange} />
-          <button className='bg-green-500 px-4 py-1 rounded-xl my-2 md: mx-1 text-white' onClick={handleSave}>Save</button>
+          <button className='bg-green-500 px-4 py-1 rounded-xl my-2 md: mx-1 text-white hover:bg-green-600' onClick={handleSave}>Save</button>
 
           <div className="finished flex gap-1">
             <input type="checkbox" name="submit" id="" onChange={togglefinished} />
@@ -115,7 +110,7 @@ function App() {
         <div className="content">
           <h1 className='font-bold md:text-lg'>Your Todos</h1>
 
-          {todos.length == 0 && <div className='mx-2 my-10'>No todos to display</div>}
+          {todos.length == 0 && <div className='mx-2 my-2'>No todos to display</div>}
 
           {todos.map(item => {
 
