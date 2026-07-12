@@ -29,8 +29,11 @@ function App() {
   }
 
   useEffect(() => {
-    let todos = JSON.parse(localStorage.getItem("todos"))
-    setodos(todos)
+    let todoString=localStorage.getItem("todos")
+    if(todoString){
+      let todos = JSON.parse(localStorage.getItem("todos"))
+      setodos(todos)
+    }
   }, [])
 
   const handleEdit = (id) => {
