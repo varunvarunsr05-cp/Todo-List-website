@@ -91,7 +91,7 @@ function App() {
     <>
       <Navbar />
 
-      <div className="card bg-amber-200 w-[95%] mx-auto px-6 rounded-xl min-h-140 my-12 md:w-1/2">
+      <div className="card bg-purple-400 w-[95%] mx-auto px-6 rounded-xl min-h-140 my-12 md:w-1/2">
         <div className="hero">
           <h1 className='font-bold md:mx-20 py-4 text-2xl text-center'>iTask-Manage your todos at one place</h1>
           <h2 className='font-bold text-lg'>Add Todo</h2>
